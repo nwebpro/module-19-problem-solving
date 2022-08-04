@@ -4,8 +4,13 @@
         - No return + Has parameter
 */
 
-function odd_even(num) {
-    return num % 2 === 0 ? 'Even' : 'Odd'
+function odd_even(number){
+    if(number % 2 === 0){
+        return (number + " is even number.");
+    }
+    else{
+        return (number + " is odd number.");
+    }
 }
-
-console.log(odd_even(45));
+var type = odd_even(4);
+console.log(type);
